@@ -1,6 +1,8 @@
 .template {
     border: 1px solid;
     height: 100px;
+    align-content: center;
+    text-align: center;
 }
 .template-2 {
     height: 100px;
@@ -47,12 +49,16 @@ nav>a{
 .main-content {
     display: flex;
     gap: 5px;
+    align-content: center;
+    text-align: center;
 }
 .main-container {
     border: 1px solid;
     height: 400px;
     width: 100%;
     flex: 1;
+    align-content: center;
+    text-align: center;
 }
 .section {
     align-content: center;
@@ -63,4 +69,39 @@ nav>a{
     align-content: center;
     text-align: center;
     background-color:darkkhaki;
+}
+
+
+/* outside of context */
+.slideshow {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.primary-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+    background: var(--clr-primary-400);
+  }
+
+.banner-img-1 {
+    background-image: url(https://picsum.photos/600);
+}
+
+.banner-img-2 {
+    background-image: url(https://picsum.photos/650);
+}
+
+.banner-img-3 {
+    background-image: url(https://picsum.photos/675);
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+    }
 }
