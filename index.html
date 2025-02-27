@@ -7,7 +7,7 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="css\style.css">
 </head>
-<body>
+<body style="font-family:cursive;">
     <header class="main-header">
 
         <!-- for logo -->
@@ -21,19 +21,49 @@
          </nav>
     </header>
     <main>
-        <header>
+        <header style="text-align: center;">
             <h1>Your Trusted Travel Agent</h1>
             <h4>Your Happiness is Our Happiness</h4>
         </header>
 
         <section class="main-content">
+
         <aside class="main-container">
-            <p>Banner AutoSlide</p>
+            <div class="main-banner || banner-img-1"></div>
+            <div class="main-banner || banner-img-2"></div>
+            <div class="main-banner || banner-img-3"></div>
         </aside>
 
         <!-- for form contact us-->
         <aside class="main-container">
+            <header>
             <p>Form Contact Us</p>
+            </header>
+<!-- form validation -->
+            <form>
+                <div>
+                    <ul>
+                    <label for="name-input">Name:</label>
+                    <input type="text" id="name-input" required>
+                    <div>
+                        <button type="button" onclick="validateForm();">Submit</button>
+
+                    <label for="email-input">Email:</label>
+                    <input type="text" id="email-input" required>
+                    <div>
+                        <button type="button" onclick="validateFormEmail();">Submit</button>
+                    
+
+                    <label for="destination-input">Destination:</label>
+                    <select name="text" id="destination-input" required>
+                        <option value="1">Bali</option>
+                        <option value="2">Japan</option>
+                        <option value="3">Singapore</option>
+                        <option value="4">Bandung</option>
+                    </ul>
+                </div>
+                </div>
+            </form>
         </aside>
         </section>
 
@@ -60,8 +90,10 @@
         </section>
         </main>
     <footer>
-        <p style="text-align: center;">Made by Joyce@2025</p>
+        <p style= "text-align: center;">Made by Joyce@2025</p>
     </footer>
+
+    <!-- Javascript -->
+    <script src="js/script.js"> </script> 
 </body>
-<script> script.js</script> 
 </html>
